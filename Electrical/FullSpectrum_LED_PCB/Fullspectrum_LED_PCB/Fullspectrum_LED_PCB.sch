@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+LIBS:Fullspectrum_LED_PCB-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5BAC2D40
+P 7150 5800
+F 0 "D1" V 7095 5879 50  0000 L CNN
+F 1 "White_LED" V 7400 5800 50  0000 L CNN
+F 2 "MRV_SMD_Packages:LED_Cree_XQ-E" H 7150 5800 50  0001 C CNN
+F 3 "~" H 7150 5800 50  0001 C CNN
+	1    7150 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5BAC2EDA
+P 8650 5800
+F 0 "D3" V 8600 5600 50  0000 L CNN
+F 1 "UV_LED" V 8900 5800 50  0000 L CNN
+F 2 "LED_SMD:LED_PLCC-2" H 8650 5800 50  0001 C CNN
+F 3 "~" H 8650 5800 50  0001 C CNN
+	1    8650 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5BAC2F04
+P 8000 5800
+F 0 "D2" V 7945 5878 50  0000 L CNN
+F 1 "IR_LED" V 8250 5800 50  0000 L CNN
+F 2 "MRV_SMD_Packages:LED_Oslon_SFH_4735" H 8000 5800 50  0001 C CNN
+F 3 "~" H 8000 5800 50  0001 C CNN
+	1    8000 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 5BAC3126
+P 9450 5750
+F 0 "TH1" H 9297 5704 50  0000 R CNN
+F 1 "Thermistor_NTC" H 9550 6000 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 9450 5800 50  0001 C CNN
+F 3 "~" H 9450 5800 50  0001 C CNN
+	1    9450 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 5BAC3304
+P 8350 5000
+F 0 "J1" V 8185 4926 50  0000 C CNN
+F 1 "Conn_01x08_Male" V 8276 4926 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Pico-Lock_504050-0891_1x08-1MP_P1.50mm_Horizontal" H 8350 5000 50  0001 C CNN
+F 3 "~" H 8350 5000 50  0001 C CNN
+	1    8350 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 5250 7950 5250
+Wire Wire Line
+	7950 5250 7950 5200
+Wire Wire Line
+	7750 5350 8050 5350
+Wire Wire Line
+	8050 5350 8050 5200
+Wire Wire Line
+	9450 5600 9450 5450
+Wire Wire Line
+	9450 5450 8550 5450
+Wire Wire Line
+	8550 5450 8550 5200
+Wire Wire Line
+	9450 5900 9600 5900
+Wire Wire Line
+	9600 5900 9600 5400
+Wire Wire Line
+	9600 5400 8650 5400
+Wire Wire Line
+	8650 5400 8650 5200
+Wire Wire Line
+	8150 5200 8150 5550
+Wire Wire Line
+	8150 5550 8000 5550
+Wire Wire Line
+	8000 5950 8250 5950
+Wire Wire Line
+	8000 5650 8000 5550
+Wire Wire Line
+	8250 5200 8250 5950
+Wire Wire Line
+	7150 5250 7150 5650
+Wire Wire Line
+	8650 5650 8350 5650
+Wire Wire Line
+	8350 5650 8350 5200
+Wire Wire Line
+	8650 5950 8800 5950
+Wire Wire Line
+	8800 5950 8800 5550
+Wire Wire Line
+	8800 5550 8450 5550
+Wire Wire Line
+	8450 5550 8450 5200
+Connection ~ 7150 5650
+Wire Wire Line
+	7150 5650 7150 5700
+Wire Wire Line
+	7750 5350 7750 5950
+Wire Wire Line
+	7750 5950 7150 5950
+$EndSCHEMATC
