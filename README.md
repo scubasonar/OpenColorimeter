@@ -7,4 +7,4 @@ Hardware and software for measuring light passing through a sample vial.
 *Electrical design in KiCAD 5.0.0
 *Software written with Arduino IDE 1.8.7
 
-###See Wiki for more information.
+### See Wiki for more information.
